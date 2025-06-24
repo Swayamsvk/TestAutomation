@@ -12,7 +12,7 @@ workflows:
       - name: Install dependencies
         script: |
           npm install
-          cd android 
+          cd android
           bundle install
       - name: Run Fastlane build
         script: |
@@ -25,5 +25,5 @@ workflows:
         recipients:
           - 1234swayamsamyak@gmail.com
         notify:
-          on_success: true
-          on_failure: true
+          success: true
+          failure: true
