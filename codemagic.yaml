@@ -10,7 +10,7 @@ workflows:
         - tag
     scripts:
       - name: Install dependencies
-        scripts: |
+        script: |
           npm install
           cd android 
           bundle install
@@ -25,5 +25,5 @@ workflows:
         recipients:
           - 1234swayamsamyak@gmail.com
         notify:
-          success: true
-          failure: true
+          on_success: true
+          on_failure: true
